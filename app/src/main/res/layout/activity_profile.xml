@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#f4f4f4">
+
+    <!-- Profile Picture Section -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_placeholder"
+        android:contentDescription="User Profile Picture"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop" />
+
+    <!-- Full Name Input Field -->
+    <EditText
+        android:id="@+id/fullname_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@drawable/text_border" />
+
+    <!-- Username Input Field -->
+    <EditText
+        android:id="@+id/username_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@drawable/text_border" />
+
+    <!-- Phone Input Field -->
+    <EditText
+        android:id="@+id/phone_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@drawable/text_border" />
+
+    <!-- Password Input Field -->
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:background="@drawable/text_border" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+</LinearLayout>
