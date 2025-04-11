@@ -4,15 +4,13 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Button to add new schedule -->
     <Button
         android:id="@+id/add_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add New Class Schedule"
+        android:text="Add Diary Entries"
         android:layout_marginBottom="12dp" />
 
-    <!-- Button to go to profile activity -->
     <Button
         android:id="@+id/profile_button"
         android:layout_width="match_parent"
@@ -20,7 +18,6 @@
         android:text="Go to Profile"
         android:layout_marginBottom="12dp" />
 
-    <!-- ListView to display class schedules -->
     <ListView
         android:id="@+id/class_schedule_list"
         android:layout_width="match_parent"

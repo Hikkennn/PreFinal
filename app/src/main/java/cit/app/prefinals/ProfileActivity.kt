@@ -55,7 +55,6 @@ class ProfileActivity : Activity() {
 
                 Toast.makeText(this, "Profile updated successfully!", Toast.LENGTH_SHORT).show()
 
-                // After saving, allow the user to login with the new credentials
             } else {
                 Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
             }

@@ -32,7 +32,6 @@ class AddScheduleActivity : AppCompatActivity() {
                 val sharedPreferences = getSharedPreferences("schedules", MODE_PRIVATE)
                 val gson = Gson()
 
-                // Safely retrieve and deserialize the schedule list
                 val currentSchedulesJson = sharedPreferences.getString("scheduleList", "[]")
                 val currentSchedules: MutableList<ClassSchedule> = try {
                     val type = object : TypeToken<MutableList<ClassSchedule>>() {}.type
@@ -43,12 +42,11 @@ class AddScheduleActivity : AppCompatActivity() {
 
                 currentSchedules.add(schedule)
 
-                // Serialize and save the updated list
                 val updatedSchedulesJson = gson.toJson(currentSchedules)
                 sharedPreferences.edit().putString("scheduleList", updatedSchedulesJson).apply()
 
                 Toast.makeText(this, "Schedule Saved", Toast.LENGTH_SHORT).show()
-                finish() // Close activity and return to previous screen
+                finish()
             } else {
                 Toast.makeText(this, "All fields are required", Toast.LENGTH_SHORT).show()
             }

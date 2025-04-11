@@ -22,21 +22,17 @@ class HomeScreen : Activity() {
         val addButton = findViewById<Button>(R.id.add_button)
         val profileButton = findViewById<Button>(R.id.profile_button) // Reference for Profile button
 
-        // Initialize and set the adapter
         adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, scheduleList)
         listView.adapter = adapter
 
-        // Open AddScheduleActivity on button click
         addButton.setOnClickListener {
             startActivity(Intent(this, AddScheduleActivity::class.java))
         }
 
-        // Open ProfileActivity on button click
         profileButton.setOnClickListener {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
 
-        // Handle list item clicks to view or edit schedule
         listView.setOnItemClickListener { _, _, position, _ ->
             val schedule = scheduleList[position]
             val intent = Intent(this, ViewScheduleActivity::class.java)
@@ -44,7 +40,6 @@ class HomeScreen : Activity() {
             startActivity(intent)
         }
 
-        // Load saved schedules from SharedPreferences
         loadScheduleFromPreferences()
     }
 
@@ -54,7 +49,7 @@ class HomeScreen : Activity() {
         val gson = Gson()
         val scheduleArray = gson.fromJson(scheduleJson, Array<ClassSchedule>::class.java).toList()
         scheduleList.addAll(scheduleArray)
-        adapter.notifyDataSetChanged() // Notify adapter for UI update
+        adapter.notifyDataSetChanged()
     }
 
     private fun saveScheduleToPreferences() {
@@ -68,7 +63,7 @@ class HomeScreen : Activity() {
 
     fun addNewSchedule(schedule: ClassSchedule) {
         scheduleList.add(schedule)
-        adapter.notifyDataSetChanged() // Update UI when data changes
+        adapter.notifyDataSetChanged()
         saveScheduleToPreferences()
     }
 }

@@ -6,7 +6,6 @@
     android:gravity="center"
     android:background="#f4f4f4">
 
-    <!-- Profile Picture Section -->
     <ImageView
         android:id="@+id/profile_image"
         android:layout_width="100dp"
@@ -17,7 +16,6 @@
         android:layout_marginBottom="16dp"
         android:scaleType="centerCrop" />
 
-    <!-- Full Name Input Field -->
     <EditText
         android:id="@+id/fullname_edit_text"
         android:layout_width="match_parent"
@@ -27,7 +25,6 @@
         android:padding="12dp"
         android:background="@drawable/text_border" />
 
-    <!-- Username Input Field -->
     <EditText
         android:id="@+id/username_edit_text"
         android:layout_width="match_parent"
@@ -37,7 +34,6 @@
         android:padding="12dp"
         android:background="@drawable/text_border" />
 
-    <!-- Phone Input Field -->
     <EditText
         android:id="@+id/phone_edit_text"
         android:layout_width="match_parent"
@@ -47,7 +43,6 @@
         android:padding="12dp"
         android:background="@drawable/text_border" />
 
-    <!-- Password Input Field -->
     <EditText
         android:id="@+id/password_edit_text"
         android:layout_width="match_parent"
@@ -58,7 +53,6 @@
         android:inputType="textPassword"
         android:background="@drawable/text_border" />
 
-    <!-- Save Button -->
     <Button
         android:id="@+id/save_button"
         android:layout_width="match_parent"
@@ -69,7 +63,6 @@
         android:layout_marginTop="16dp"
         android:padding="12dp" />
 
-    <!-- Logout Button -->
     <Button
         android:id="@+id/logout_button"
         android:layout_width="match_parent"

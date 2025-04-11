@@ -8,19 +8,19 @@
         android:id="@+id/course_name_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Course Name" />
+        android:hint="Title" />
 
     <EditText
         android:id="@+id/course_code_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Course Code" />
+        android:hint="Content" />
 
     <EditText
         android:id="@+id/day_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Day of the Week" />
+        android:hint="Date" />
 
     <EditText
         android:id="@+id/time_range_edit_text"
